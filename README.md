@@ -1,5 +1,5 @@
 # LOGISIM6526
-This is a (very experimental) implementation of a MOS6526 using logisim. In order to use the simulation, Drass' Logisim implementation of a 6502 CPU has been used.
+This is a (very experimental) implementation of a MOS6526 using logisim. In order to use the simulation, Drass' Logisim implementation of a 6502 CPU has been used. (https://hackaday.io/project/174769-100mhz-ttl-6502)
 
 Please keep in mind, this is heavily untested, and it's only made public for reference, and for anyone who feels like taking a chance a the project to be able to try it. I can offer no guarantee on the behaviour of the simulation.
 
