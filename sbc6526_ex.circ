@@ -208,9 +208,6 @@
     <comp lib="0" loc="(5591,2680)" name="Text">
       <a name="text" val="LATCH"/>
     </comp>
-    <comp lib="0" loc="(60,162)" name="Text">
-      <a name="text" val="NMI"/>
-    </comp>
     <comp lib="0" loc="(90,197)" name="Text">
       <a name="text" val="RDY"/>
     </comp>
@@ -351,6 +348,10 @@
     <comp lib="1" loc="(130,130)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="/IRQ"/>
+    </comp>
+    <comp lib="1" loc="(130,160)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="/NMI"/>
     </comp>
     <comp lib="1" loc="(130,190)" name="Pin"/>
     <comp lib="1" loc="(130,220)" name="Pin"/>
@@ -713,6 +714,11 @@
       <a name="labelloc" val="east"/>
       <a name="type" val="output"/>
     </comp>
+    <comp lib="1" loc="(210,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="TERM"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
+    </comp>
     <comp lib="1" loc="(2120,870)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="1_PORTBREG"/>
@@ -928,11 +934,6 @@
       <a name="facing" val="south"/>
       <a name="label" val="D"/>
       <a name="width" val="8"/>
-    </comp>
-    <comp lib="1" loc="(240,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="TERM"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="1" loc="(240,70)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -1462,6 +1463,12 @@
       <a name="label" val="D"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="1" loc="(310,170)" name="Pin">
+      <a name="labelloc" val="east"/>
+      <a name="radix" val="16"/>
+      <a name="type" val="output"/>
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="1" loc="(3120,220)" name="Tunnel">
       <a name="label" val="1_TASTART"/>
     </comp>
@@ -1636,12 +1643,6 @@
       <a name="facing" val="east"/>
       <a name="label" val="1_DZ"/>
       <a name="width" val="8"/>
-    </comp>
-    <comp lib="1" loc="(340,170)" name="Pin">
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="16"/>
-      <a name="type" val="output"/>
-      <a name="width" val="16"/>
     </comp>
     <comp lib="1" loc="(340,170)" name="Tunnel">
       <a name="label" val="A"/>
@@ -1888,9 +1889,6 @@
       <a name="label" val="D"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="1" loc="(3780,1180)" name="Tunnel">
-      <a name="label" val="1_TBOFDETECT"/>
-    </comp>
     <comp lib="1" loc="(3780,1280)" name="Tunnel">
       <a name="label" val="1_TIMERB"/>
       <a name="width" val="16"/>
@@ -1964,6 +1962,15 @@
       <a name="facing" val="east"/>
       <a name="label" val="1_TBUNDERFLOW"/>
     </comp>
+    <comp lib="1" loc="(3840,1030)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="label" val="TBLOAD"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(3840,1180)" name="Tunnel">
+      <a name="label" val="1_TBOFDETECT"/>
+    </comp>
     <comp lib="1" loc="(3840,540)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="1_WETBLO"/>
@@ -1973,6 +1980,12 @@
       <a name="facing" val="east"/>
       <a name="label" val="1_WETBHI"/>
       <a name="labelfont" val="SansSerif plain 6"/>
+    </comp>
+    <comp lib="1" loc="(3850,1220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="label" val="TBis0"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(3850,2620)" name="Splitter">
       <a name="facing" val="west"/>
@@ -1985,6 +1998,12 @@
     <comp lib="1" loc="(3850,670)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="1_TBFL"/>
+    </comp>
+    <comp lib="1" loc="(3860,870)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="label" val="PRECOUNT"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="1" loc="(3870,2310)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -2328,10 +2347,6 @@
       <a name="label" val="TOD"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="1" loc="(440,20)" name="Tunnel">
-      <a name="label" val="TOD"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
     <comp lib="1" loc="(4410,640)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
@@ -2359,7 +2374,7 @@
       <a name="label" val="TOD"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="1" loc="(4410,950)" name="Tunnel">
+    <comp lib="1" loc="(4420,960)" name="Tunnel">
       <a name="label" val="TOD"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
@@ -2492,13 +2507,13 @@
       <a name="label" val="TOD"/>
       <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
-    <comp lib="1" loc="(4710,2480)" name="Tunnel">
-      <a name="label" val="TOD"/>
-      <a name="labelfont" val="SansSerif plain 8"/>
-    </comp>
     <comp lib="1" loc="(4720,2110)" name="Constant"/>
     <comp lib="1" loc="(4720,2170)" name="Constant">
       <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="1" loc="(4720,2490)" name="Tunnel">
+      <a name="label" val="TOD"/>
+      <a name="labelfont" val="SansSerif plain 8"/>
     </comp>
     <comp lib="1" loc="(4720,540)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3319,6 +3334,10 @@
       <a name="facing" val="east"/>
       <a name="label" val="/IRQ"/>
     </comp>
+    <comp lib="1" loc="(680,540)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="/NMI"/>
+    </comp>
     <comp lib="1" loc="(70,380)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="A"/>
@@ -3576,22 +3595,6 @@
     <comp lib="1" loc="(880,480)" name="Tunnel">
       <a name="label" val="1_/PC"/>
     </comp>
-    <comp lib="1" loc="(910,260)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="label" val="TA"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="16"/>
-      <a name="type" val="output"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="1" loc="(910,360)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="label" val="TB"/>
-      <a name="labelloc" val="east"/>
-      <a name="radix" val="16"/>
-      <a name="type" val="output"/>
-      <a name="width" val="16"/>
-    </comp>
     <comp lib="12" loc="(2890,1140)" name="timer16"/>
     <comp lib="12" loc="(3170,2690)" name="timer16"/>
     <comp lib="12" loc="(3760,1160)" name="timer16"/>
@@ -3626,7 +3629,6 @@
       <a name="width" val="8"/>
     </comp>
     <comp lib="2" loc="(1290,2080)" name="Buffer"/>
-    <comp lib="2" loc="(130,160)" name="NOT Gate"/>
     <comp lib="2" loc="(1320,2220)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
@@ -5055,9 +5057,6 @@
     <comp lib="6" loc="(4440,630)" name="Button">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="6" loc="(90,160)" name="Button">
-      <a name="color" val="#7dff59"/>
-    </comp>
     <comp lib="6" loc="(90,260)" name="Button"/>
     <comp lib="7" loc="(2110,450)" name="Ground"/>
     <comp lib="7" loc="(2130,1240)" name="Ground"/>
@@ -5109,60 +5108,62 @@
       <state path="/RAM@(110,390)">
         <a name="contents">addr/data: 16 8
 compressed
-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&#13;
-uQ==</a>
+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&#13;
+4OeTjVby4HzEgf89xefRatFaLTTp/5z2uH62x/XBIJx6Plr8f/FaL7pgxlxZl3rShkufb3Txu+Oe&#13;
+Pw80Gl0ohmgAdNkh6pRXXt0eYLH1a/1PewBR55Bb04lQ2z6qA9vkOnW45xvRNnJL5EsWeA7Fqfil&#13;
+QAwL7n2LwHNUAUcVvXQpib+NZ0eptTVqvCZ+rLVwwOlCxO9m5OkQFTp5ibJwCAZnaCB/ds1nrvhX&#13;
+z4KemHQs5FUOumdggZKRaatk/BokuoUPh+Sxz22f/vAGlmvdSd8uKbr8EKgTQmaBIsQpQvylJjN/&#13;
+ZYG7ZkPzl5rlcVZ+vEXv3xDGHlTH6MndDIvv9Pz/kLyUscfYXB9OsNlJRH0Qs5LJt+j2A56Dz5FV&#13;
+wDyE6knxDRM6JgQxBUZiWLpIVJLWWnGMCgKCVy8edYCKNzfTQsuTntEyT2h4OuUJDc9yC7B2mkhW&#13;
+QCfGLSqDJQz/eMe90D4Ulp3AJD1CXWjLv2x04LSgopy52BNWt/KnmV7I0dmfYIXJfgf5jjwC17SZ&#13;
+S76f/lHABOokHhyB+HXl25WG2Lv9HzEgWhhohTEUxuEfV2cVAIqARrSZd1ThcYHPC2UB5wjW78z4&#13;
+RyT8HfrxMs3wQVmCdDx1Xn2ZaZ8DO7+u044WP3e0xJ6SeSe95XdJx0QhEfhdIcVAoBMlflz5Y401&#13;
+jPiZKt9Y3ExID5E9/+bnvfxsGR2tbCPNkIOt7F0W/nEeVLEejYjtlAeu+APkGSz2hEV/rAwkZG/a&#13;
+/w/6FBk3yZTeksg7ceV2DkxavQNdn8yo//rwO2R2GnL4H4JKq/w=</a>
       </state>
     </simulation>
     <wire from="(1020,380)" to="(1020,430)"/>
@@ -5740,6 +5741,7 @@ uQ==</a>
     <wire from="(2090,340)" to="(2100,340)"/>
     <wire from="(210,210)" to="(210,230)"/>
     <wire from="(210,210)" to="(240,210)"/>
+    <wire from="(210,340)" to="(280,340)"/>
     <wire from="(2100,230)" to="(2260,230)"/>
     <wire from="(2110,440)" to="(2110,450)"/>
     <wire from="(2110,440)" to="(2120,440)"/>
@@ -5976,7 +5978,6 @@ uQ==</a>
     <wire from="(2380,2910)" to="(2490,2910)"/>
     <wire from="(2390,2000)" to="(2400,2000)"/>
     <wire from="(240,210)" to="(260,210)"/>
-    <wire from="(240,340)" to="(280,340)"/>
     <wire from="(240,70)" to="(270,70)"/>
     <wire from="(2400,1740)" to="(2410,1740)"/>
     <wire from="(2400,1940)" to="(2400,2000)"/>
@@ -6557,6 +6558,7 @@ uQ==</a>
     <wire from="(3080,980)" to="(3080,990)"/>
     <wire from="(3090,1940)" to="(3100,1940)"/>
     <wire from="(3090,950)" to="(3100,950)"/>
+    <wire from="(310,170)" to="(340,170)"/>
     <wire from="(3100,1940)" to="(3100,1960)"/>
     <wire from="(3100,1960)" to="(3180,1960)"/>
     <wire from="(3100,2320)" to="(3100,2360)"/>
@@ -6943,7 +6945,7 @@ uQ==</a>
     <wire from="(3750,900)" to="(3920,900)"/>
     <wire from="(3750,920)" to="(3770,920)"/>
     <wire from="(3760,1160)" to="(3780,1160)"/>
-    <wire from="(3760,1180)" to="(3780,1180)"/>
+    <wire from="(3760,1180)" to="(3820,1180)"/>
     <wire from="(3760,1280)" to="(3780,1280)"/>
     <wire from="(3760,2150)" to="(3760,2160)"/>
     <wire from="(3760,2160)" to="(3780,2160)"/>
@@ -6978,7 +6980,7 @@ uQ==</a>
     <wire from="(380,140)" to="(430,140)"/>
     <wire from="(380,20)" to="(380,70)"/>
     <wire from="(380,20)" to="(440,20)"/>
-    <wire from="(3800,1030)" to="(3880,1030)"/>
+    <wire from="(3800,1030)" to="(3840,1030)"/>
     <wire from="(3800,1910)" to="(3800,2020)"/>
     <wire from="(3800,1910)" to="(4160,1910)"/>
     <wire from="(3800,2020)" to="(3800,2040)"/>
@@ -7008,7 +7010,10 @@ uQ==</a>
     <wire from="(3810,2880)" to="(3900,2880)"/>
     <wire from="(3810,2900)" to="(3900,2900)"/>
     <wire from="(3810,300)" to="(3810,440)"/>
-    <wire from="(3810,920)" to="(3900,920)"/>
+    <wire from="(3810,920)" to="(3830,920)"/>
+    <wire from="(3820,1180)" to="(3820,1220)"/>
+    <wire from="(3820,1180)" to="(3840,1180)"/>
+    <wire from="(3820,1220)" to="(3850,1220)"/>
     <wire from="(3820,130)" to="(3820,400)"/>
     <wire from="(3820,130)" to="(3890,130)"/>
     <wire from="(3820,1780)" to="(3830,1780)"/>
@@ -7037,6 +7042,9 @@ uQ==</a>
     <wire from="(3830,2530)" to="(3830,2550)"/>
     <wire from="(3830,2550)" to="(3860,2550)"/>
     <wire from="(3830,380)" to="(3910,380)"/>
+    <wire from="(3830,870)" to="(3830,920)"/>
+    <wire from="(3830,870)" to="(3860,870)"/>
+    <wire from="(3830,920)" to="(3900,920)"/>
     <wire from="(3840,1010)" to="(3850,1010)"/>
     <wire from="(3840,110)" to="(3840,360)"/>
     <wire from="(3840,110)" to="(3890,110)"/>
@@ -7045,6 +7053,7 @@ uQ==</a>
     <wire from="(3840,2530)" to="(3860,2530)"/>
     <wire from="(3840,360)" to="(3910,360)"/>
     <wire from="(3850,1010)" to="(3870,1010)"/>
+    <wire from="(3850,1030)" to="(3880,1030)"/>
     <wire from="(3850,2610)" to="(3850,2620)"/>
     <wire from="(3850,2610)" to="(3960,2610)"/>
     <wire from="(3850,2740)" to="(3900,2740)"/>
@@ -7990,13 +7999,12 @@ uQ==</a>
     <wire from="(60,70)" to="(150,70)"/>
     <wire from="(620,480)" to="(630,480)"/>
     <wire from="(630,480)" to="(640,480)"/>
-    <wire from="(680,520)" to="(700,520)"/>
+    <wire from="(680,520)" to="(720,520)"/>
+    <wire from="(680,540)" to="(720,540)"/>
+    <wire from="(690,580)" to="(710,580)"/>
     <wire from="(70,380)" to="(80,380)"/>
     <wire from="(70,410)" to="(110,410)"/>
     <wire from="(70,440)" to="(80,440)"/>
-    <wire from="(700,520)" to="(700,540)"/>
-    <wire from="(700,520)" to="(720,520)"/>
-    <wire from="(700,540)" to="(720,540)"/>
     <wire from="(750,480)" to="(760,480)"/>
     <wire from="(80,380)" to="(80,400)"/>
     <wire from="(80,400)" to="(110,400)"/>
@@ -8006,11 +8014,8 @@ uQ==</a>
     <wire from="(810,260)" to="(840,260)"/>
     <wire from="(810,360)" to="(840,360)"/>
     <wire from="(810,70)" to="(810,90)"/>
-    <wire from="(840,260)" to="(910,260)"/>
-    <wire from="(840,360)" to="(910,360)"/>
     <wire from="(860,480)" to="(880,480)"/>
     <wire from="(90,100)" to="(150,100)"/>
-    <wire from="(90,160)" to="(100,160)"/>
     <wire from="(90,260)" to="(110,260)"/>
   </circuit>
   <circuit name="memDecoder">
