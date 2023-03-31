@@ -117,23 +117,29 @@
     <a name="clabelup" val="north"/>
     <appear>
       <circ-anchor facing="east" height="6" width="6" x="287" y="67"/>
-      <circ-port height="10" pin="580,2390" width="10" x="335" y="65"/>
-      <circ-port height="10" pin="580,2440" width="10" x="335" y="255"/>
-      <circ-port height="10" pin="890,2370" width="10" x="335" y="225"/>
-      <circ-port height="10" pin="940,2120" width="10" x="335" y="155"/>
-      <circ-port height="10" pin="940,2160" width="10" x="335" y="95"/>
-      <circ-port height="10" pin="940,2200" width="10" x="335" y="125"/>
-      <circ-port height="10" pin="940,2240" width="10" x="335" y="185"/>
+      <circ-port height="10" pin="580,2390" width="10" x="395" y="65"/>
+      <circ-port height="10" pin="580,2440" width="10" x="395" y="255"/>
+      <circ-port height="10" pin="890,2370" width="10" x="395" y="225"/>
+      <circ-port height="10" pin="940,2120" width="10" x="395" y="155"/>
+      <circ-port height="10" pin="940,2160" width="10" x="395" y="95"/>
+      <circ-port height="10" pin="940,2200" width="10" x="395" y="125"/>
+      <circ-port height="10" pin="940,2240" width="10" x="395" y="185"/>
       <circ-port height="8" pin="580,2120" width="8" x="286" y="66"/>
       <circ-port height="8" pin="580,2160" width="8" x="286" y="186"/>
       <circ-port height="8" pin="580,2200" width="8" x="286" y="216"/>
       <circ-port height="8" pin="580,2250" width="8" x="286" y="96"/>
       <circ-port height="8" pin="580,2290" width="8" x="286" y="126"/>
       <circ-port height="8" pin="580,2330" width="8" x="286" y="156"/>
-      <circ-port height="8" pin="890,2330" width="8" x="336" y="206"/>
-      <path d="M312,67 Q316,77 320,67" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="225" stroke="#000000" stroke-width="2" width="50" x="290" y="65"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="316" y="88">6502</text>
+      <circ-port height="8" pin="890,2330" width="8" x="396" y="206"/>
+      <path d="M342,59 Q346,69 350,59" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="225" stroke="#000000" stroke-width="2" width="108" x="290" y="61"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="342" y="133">A</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="342" y="154">Y</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="346" y="80">6502</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="351" y="143">X</text>
+      <visible-register height="10" path="/Register(4730,400)" stroke-width="0" width="13" x="322" y="129"/>
+      <visible-register height="10" path="/Register(4730,690)" stroke-width="0" width="13" x="322" y="139"/>
+      <visible-register height="10" path="/Register(4730,980)" stroke-width="0" width="13" x="322" y="149"/>
     </appear>
     <comp lib="0" loc="(1010,3500)" name="Tunnel">
       <a name="label" val="/STP.EN"/>
@@ -8527,14 +8533,14 @@ CrFoCKrt+QlQFBuzE16dFxit+nuUFW9SKZ+Etxgz9gyvJY6uwBiJavTHnhDFH3v+secfe/6x5wCa&#13
     <wire from="(230,430)" to="(330,430)"/>
     <wire from="(230,440)" to="(230,500)"/>
     <wire from="(230,440)" to="(250,440)"/>
-    <wire from="(270,140)" to="(350,140)"/>
-    <wire from="(270,170)" to="(350,170)"/>
-    <wire from="(270,200)" to="(350,200)"/>
-    <wire from="(270,230)" to="(350,230)"/>
-    <wire from="(270,260)" to="(350,260)"/>
+    <wire from="(270,140)" to="(330,140)"/>
+    <wire from="(270,170)" to="(330,170)"/>
+    <wire from="(270,200)" to="(330,200)"/>
+    <wire from="(270,230)" to="(330,230)"/>
+    <wire from="(270,260)" to="(330,260)"/>
     <wire from="(270,280)" to="(280,280)"/>
     <wire from="(270,300)" to="(280,300)"/>
-    <wire from="(270,330)" to="(350,330)"/>
+    <wire from="(270,330)" to="(330,330)"/>
     <wire from="(280,280)" to="(280,290)"/>
     <wire from="(280,290)" to="(280,300)"/>
     <wire from="(280,290)" to="(350,290)"/>
@@ -8543,6 +8549,12 @@ CrFoCKrt+QlQFBuzE16dFxit+nuUFW9SKZ+Etxgz9gyvJY6uwBiJavTHnhDFH3v+secfe/6x5wCa&#13
     <wire from="(290,420)" to="(330,420)"/>
     <wire from="(290,450)" to="(290,530)"/>
     <wire from="(290,450)" to="(330,450)"/>
+    <wire from="(330,140)" to="(350,140)"/>
+    <wire from="(330,170)" to="(350,170)"/>
+    <wire from="(330,200)" to="(350,200)"/>
+    <wire from="(330,230)" to="(350,230)"/>
+    <wire from="(330,260)" to="(350,260)"/>
+    <wire from="(330,330)" to="(350,330)"/>
     <wire from="(460,330)" to="(480,330)"/>
     <wire from="(520,240)" to="(530,240)"/>
     <wire from="(530,240)" to="(530,280)"/>
